@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Email.css">
+
+    <title>Formulario de contacto</title>
+</head>
+<body>
+    <form id="formulario-contacto" action="https://formsubmit.co/adrianpaldaof@hotmail.com" method="POST">
+    <h2>Formulario de contacto</h2>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje"  required></textarea><br><br>
+        <input type="submit" value="Enviar">
+
+        <input type="hidden" name="_next" value="http://127.0.0.7:5500/E-mail/E-mail.html">
+        
+        <input type="hidden" name="_captcha" value="false">
+    </form>
+
+  
+</body>
+<button onclick="window.location.href='/indexGTP.html';">Volver al inicio</button>
+<div id="mensaje-enviado" style="display: none;">¡Gracias por su mensaje!</div>
+
+<script src="Email.js"></script>
+
+
+</html>
